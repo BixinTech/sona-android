@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    tools:background="#667788">
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_weight="1"
+        android:background="@drawable/chatroom_bg_input"
+        android:gravity="center_vertical"
+        android:hint="聊聊天~"
+        android:includeFontPadding="false"
+        android:maxHeight="94dp"
+        android:maxLength="100"
+        android:maxLines="5"
+        android:minHeight="36dp"
+        android:paddingStart="12dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="8dp"
+        android:textColor="#FF111111"
+        android:textColorHint="#FFD8D8D8"
+        android:textSize="14sp"
+        tools:ignore="Autofill,HardcodedText,TextFields"
+        tools:text="hhh" />
+
+    <TextView
+        android:id="@+id/tvSend"
+        android:layout_width="64dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/chatroom_bg_input_send_selector"
+        android:gravity="center"
+        android:text="发送"
+        android:textColor="#FFFBF2"
+        android:textSize="16sp"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+</LinearLayout>

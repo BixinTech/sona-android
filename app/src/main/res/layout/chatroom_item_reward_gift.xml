@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clGift"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:background="@drawable/chatroom_bg_gift_item_selector"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:background="@android:color/holo_blue_bright"
+    tools:layout_width="100dp">
+
+    <ImageView
+        android:id="@+id/ivGift"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="2dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tvGiftName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="2dp"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivGift"
+        tools:text="你好啊" />
+
+    <ImageView
+        android:id="@+id/ivDiamond"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="2dp"
+        android:src="@mipmap/chatroom_ic_diamond_white"
+        android:textColor="#99FFFFFF"
+        android:textSize="10sp"
+        app:tint="#FFBEBEBE"
+        app:layout_constraintTop_toBottomOf="@+id/tvGiftName"
+        app:layout_constraintEnd_toStartOf="@+id/tvGiftPrice"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription,SmallSp" />
+
+    <TextView
+        android:id="@+id/tvGiftPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
+        android:textColor="#FFBEBEBE"
+        android:textSize="9sp"
+        app:layout_constraintTop_toTopOf="@+id/ivDiamond"
+        app:layout_constraintBottom_toBottomOf="@id/ivDiamond"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivDiamond"
+        tools:text="2000"
+        tools:ignore="SmallSp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

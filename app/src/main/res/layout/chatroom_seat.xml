@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <cn.bixin.sona.demo.widget.SeatView
+        android:id="@+id/seatFirst"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toEndOf="@id/guideLine"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <cn.bixin.sona.demo.widget.SeatView
+        android:id="@+id/seatSecond"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintStart_toEndOf="@id/guideLine"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <cn.bixin.sona.demo.widget.SeatView
+        android:id="@+id/seatThird"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="65dp"
+        app:layout_constraintEnd_toStartOf="@id/guideLine"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <cn.bixin.sona.demo.widget.SeatView
+        android:id="@+id/seatFourth"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintStart_toEndOf="@id/guideLine"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginStart="65dp" />
+
+    <cn.bixin.sona.demo.widget.SeatView
+        android:id="@+id/seatFifth"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toStartOf="@id/guideLine"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <cn.bixin.sona.demo.widget.SeatView
+        android:id="@+id/seatSixth"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="190dp"
+        app:layout_constraintStart_toEndOf="@id/guideLine"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
