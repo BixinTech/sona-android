@@ -1,1 +1,2 @@
 include ':app', ':sona-room', ':sona-base', ':sona-annotation', ':sona-compiler', ':sona-audio', ':sona-report'
+include ':mercury'

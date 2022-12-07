@@ -40,6 +40,7 @@ dependencies {
     implementation project(':sona-room')
     implementation project(':sona-audio')
     implementation project(':sona-base')
+    implementation project(':mercury')
 
     implementation "com.dianping.android.sdk:logan:1.2.4"
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
