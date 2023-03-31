@@ -1,6 +1,9 @@
 # sona-android
 SONA语音房间通用解决方案的Android端项目，包含房间管理、实时音视频、房间IM等功能。
 
+### demo下载
+![img.png](doc/img.png)
+
 ### 快速接入
  1. 初始化Sona
     ```
