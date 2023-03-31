@@ -106,7 +106,7 @@ class SeatView @JvmOverloads constructor(
             } else {
                 ivMute.visibility = View.GONE
             }
-            Glide.with(context).load(AvatarUtil.getSeatAvatar(seatInfoModel.index)).circleCrop()
+            Glide.with(context).load(AvatarUtil.getUserAvatar(seatInfoModel.uid ?: "")).circleCrop()
                 .into(ivSeatIcon)
         }
     }

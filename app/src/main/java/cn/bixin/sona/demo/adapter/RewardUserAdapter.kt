@@ -26,7 +26,7 @@ class RewardUserAdapter(private val context: Context, private val list: List<Sea
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         if (holder is RewardUserViewHolder) {
-            val url = AvatarUtil.getSeatAvatar(list[position].index)
+            val url = AvatarUtil.getUserAvatar(list[position].uid ?: "")
             Glide.with(context).load(url).circleCrop().into(holder.itemView.ivAvatar)
             holder.itemView.tvSeatIndex.text = "${list[position].index + 1}麦"
             if (selectedIndex == position) {

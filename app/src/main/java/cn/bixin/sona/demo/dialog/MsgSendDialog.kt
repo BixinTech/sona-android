@@ -49,7 +49,7 @@ class MsgSendDialog : BaseDialogFragment() {
             val textMsg = ChatRoomTextMsg()
             textMsg.content = mRootView.etInput.text.toString()
             textMsg.name = "用户"
-            textMsg.uid = "201721042504930029"
+            textMsg.uid = ChatRoomManager.myUid
             ChatRoomManager.connectPlugin()?.sendMessage(
                 ConnectMessage.MessageCreator.createCustomMessage(
                     textMsg.toJsonString()

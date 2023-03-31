@@ -1,11 +1,14 @@
 package cn.bixin.sona.demo.util
 
+import android.text.TextUtils
 import cn.bixin.sona.demo.R
 import kotlin.math.roundToInt
 
 object AvatarUtil {
 
-    fun getSeatAvatar(index: Int): Int {
+    private val avatarMap = hashMapOf<String, Int>()
+
+    private fun getAvatar(index: Int): Int {
         return when (index) {
             0 -> R.mipmap.chatroom_img_avatar_1
             1 -> R.mipmap.chatroom_img_avatar_2
@@ -17,8 +20,15 @@ object AvatarUtil {
         }
     }
 
-    fun getRandomAvatar(): Int {
+    private fun getRandomAvatar(): Int {
         val random = (Math.random() * 10).roundToInt()
-        return getSeatAvatar(random % 6)
+        return getAvatar(random % 6)
+    }
+
+    fun getUserAvatar(uid: String): Int {
+        if (avatarMap[uid] == null || avatarMap[uid] == 0) {
+            avatarMap[uid] = getRandomAvatar()
+        }
+        return avatarMap[uid] ?: 0
     }
 }

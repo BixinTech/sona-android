@@ -11,7 +11,6 @@
         android:layout_marginStart="16dp"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
-        android:text="我在人间凑数的日子"
         android:textColor="#FFEAE6FF"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"

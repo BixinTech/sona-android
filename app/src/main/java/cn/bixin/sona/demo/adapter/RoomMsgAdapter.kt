@@ -49,7 +49,7 @@ class RoomMsgAdapter(private val context: Context, private val list: List<BaseCh
         if (holder is TextViewHolder) {
             holder.itemView.tvName.text = "用户${(list[position] as? ChatRoomTextMsg)?.uid}"
             holder.itemView.tvContent.text = (list[position] as? ChatRoomTextMsg)?.content
-            val url = AvatarUtil.getRandomAvatar()
+            val url = AvatarUtil.getUserAvatar((list[position] as? ChatRoomTextMsg)?.uid ?: "")
             Glide.with(context).load(url).circleCrop().into(holder.itemView.ivAvatar)
         } else if (holder is GiftRewardTipsViewHolder) {
             val msg = list[position] as? ChatRoomGiftRewardTipsMsg

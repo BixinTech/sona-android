@@ -26,6 +26,7 @@ class ChatRoomListAdapter(private val context: Context, private val list: List<C
         if (holder is ChatRoomListViewHolder) {
             holder.itemView.tvTitle.text = list[position].name
             holder.itemView.tvDescription.text = list[position].roomId
+            holder.itemView.tvCoverTitle.text = list[position].name
 
             holder.itemView.clRoomList.setOnClickListener {
                 context.startActivity(Intent(context, ChatRoomActivity::class.java).apply {

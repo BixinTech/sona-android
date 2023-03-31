@@ -18,6 +18,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/tvCoverTitle"
+        app:layout_constraintStart_toStartOf="@+id/ivCover"
+        app:layout_constraintEnd_toEndOf="@+id/ivCover"
+        app:layout_constraintTop_toTopOf="@+id/ivCover"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCover"
+        android:textColor="#80EAE6FF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
         android:id="@+id/tvTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

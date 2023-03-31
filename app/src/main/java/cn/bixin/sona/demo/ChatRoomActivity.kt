@@ -137,7 +137,7 @@ class ChatRoomActivity : BaseActivity() {
         }
 
         ivGift.setOnClickListener {
-            GiftRewardDialog.newInstance(ArrayList(seatList)).show(supportFragmentManager)
+            GiftRewardDialog.newInstance(ArrayList(seatList ?: emptyList())).show(supportFragmentManager)
         }
 
         ivMore.setOnClickListener {
